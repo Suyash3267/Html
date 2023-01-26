@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+    list-style-type: none;
+    }
+    div img{
+     border-left-width: 1px;
+      width: auto;
+      height: 30px;
+      border: 1px;
+      border-radius: 25px;
+    }
+   
+    html{
+      display: block;
+      position: relative;
+      
+      padding: 8px 0 12px 25px;
+      transition: 0.3s;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    ul{
+      overflow: hidden;
+    }
+    
+    .navbar{
+      
+        background-color:rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+            align-items: center;
+            font-size:90% ; 
+    }
+    
+    .nav-list{
+      
+      float: right;
+
+    }
+    .list-items a{
+      color: rgba(35, 34, 34, 0.756);
+      list-style-type: none;
+      border-style: hidden;
+      text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid rgba(187, 187, 187, 0.359);
+       border-radius: 10px;
+      background-color:rgb(255, 255, 255);
+      display: inline-block ;
+      
+    }
+    .Apply{
+      border-style: hidden;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #3498db;
+      list-style-type: none;
+    }
+    .Apply a{
+      text-decoration: none;
+      color: azure;
+    }
+    .nav-list a:hover{
+      background-color:rgb(235, 230, 230);
+    }
+    
+    .nav-list .list-items{
+    display: inline-block;
+    padding: 10px 1px;
+    
+    
+    }
+   section div ol li{
+  
+    padding-top: 27px;
+    padding-bottom: 20px; 
+    text-align: center;
+align-items: center;
+align-content: center;
+
+color: rgb(49, 141, 26);
+background-color:#272822 ;
+    }
+    .prName{
+      width: 90%;
+      font-family: 'Josefin Sans', sans-serif;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      text-shadow: 1px 1px 5px rgb(59, 100, 70);
+      height: 30px;
+    
+    }
+    .prName:hover{
+      cursor:pointer;
+      transition-duration: .5s;
+      text-shadow:1px 2px 5px rgb(192, 77, 90);
+
+    }
+    lbar-item>a, div.code-toolbar>.toolbar>.toolbar-item>button, div.code-toolbar>.toolbar>.toolbar-item>span {
+      cursor: pointer;
+     
+      position: relative;
+       padding: 0 0.55em !important; 
+    }
+
+   
+  .menu_line{
+
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+  }
+@media screen and (max-width: 700px) {
+  
+    .navbar:disabled;
+
+  }
+  

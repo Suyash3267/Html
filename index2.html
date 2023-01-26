@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <title>Bootstrap Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="stylesheet2.css">
+<link rel="stylesheet" href="prism.css">
+<script src="prism.js"></script>
+<body>
+  <nav class="navbar">
+    <div class="imgLogo">
+      <img src="https://www.codenera.in/assets/img/newLogo.png" alt="Logo">
+    </div>
+    <ul class="nav-list">
+      <li class="list-items">
+        <a href="#"> Home</a>
+      </li>
+      <li class="list-items">
+        <a href="#">About</a>
+      </li>
+      <li class="list-items">
+        <a href="#">Ho to Apply</a>
+      </li>
+      <li class="list-items">
+        <a href="#">Course Features</a>
+      </li>
+      <li class="list-items">
+        <a href="#">Program Details</a>
+      </li>
+      <li class="list-items">
+        <a href="#">Placements</a>
+      </li>
+    </ul>
+    <li class="Apply">
+      <a href="#">Apply Now</a>
+    </li>
+    <div class="menu">
+      <div class="menu_line"></div>
+      <div class="menu_line"></div>
+      <div class="menu_line"></div>
+
+    </div>
+  </nav>
+  <br><br><br>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    aria-controls="offcanvasExample"  style="background-color: #3498db;">
+   Course Details
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample"  style="background-color: #3498db;">
+    Notes
+  </button>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+<div class="table-responsive">
+  <table class="table table-hover">
+   <h3 style="text-align: center;"> November 2022</h3>
+    <thead>
+        <tr  class="table-primary">
+           <th>Sr. No</th>
+            <th>Company Name</th>
+            <th>Technology</th>
+            <th>Package</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr  class="table-info">
+          <td>1</td>
+            <td>USIT</td>
+            <td>Java, SQL</td>
+            <td>2 LPA </td>
+            <td>Pune</td>
+        </tr>
+        <tr  class="table-info">
+          <td>2</td>
+            <td>Kapstone</td>
+            <td>Java, SQL</td>
+            <td>2.4 to 3 LPA</td>
+            <td>Pune</td>
+        </tr> 
+        <tr  class="table-info">
+           <td>3</td>
+            <td>Evaluationz India</td>
+            <td>Java, Databases</td>
+            <td>3.6 Lpa</td>
+            <td>Banglore</td>
+        </tr>                   
+    </tbody>
+</table>
+</div>
+
+
+<section style="margin-top: 50px;">
+
+<div class="container">
+ <ol>
+  <li>
+    <span class="prName"><h3>Armstrong Number Series</h3></span>
+  <pre class="language-java" style="width: 90%;"><code>
+import java.util.Scanner;
+
+public class ArmStrongSeries {
+
+	public static void main(String[] args) throws InterruptedException {
+		Scanner sG = new Scanner(System.in);
+		long a, z;
+		char ch[] = "Armstrong Number Series".toCharArray();
+		for (char c : ch) {
+			System.out.print(c);
+			Thread.sleep(30);
+
+		}
+		System.out.println("\nEnter first number : ");
+		a = sG.nextLong();
+
+		System.out.println("\nEnter last number : ");
+		z = sG.nextLong();
+		System.out.println();
+
+		for (; a <= z; a++) {
+			long x, rem, sum = 0, i, k;
+
+//				for(x=a; x!=0; ++n){   
+//						x/=10;		
+//				   } 
+			int n = (Long.toString(a)).length();
+			for (x = a; x != 0; x /= 10) {
+				rem = x % 10;
+
+//		    	 for( i=1,k=1;i<=n;i++){    
+//		         k*=rem;             
+//		         }	
+				// sum+=k;
+				sum += Math.pow(rem, n);
+
+			}
+			if (sum == a)
+				System.out.print(a + ", ");
+		}
+	}
+//1000000000000
+}
+ 
+    </code> 
+  </pre>
+</li>
+</ol>
+</div>
+
+
+  <div class="container">
+    <ol>
+      <li>
+        <span class="prName"><h3>Closest Perfect square of Inputted number</h3></span>
+        <pre class="language-java" style="width: 90%;"><code>
+import java.util.Scanner;
+
+public class ClosestSQQ {
+	public static void main(String[] args) {
+		Scanner sG = new Scanner(System.in);
+		int n = sG.nextInt();
+		int a = 1;
+		outerLoop: for (int i = 1; i <= n; i++) {
+			for (int j = n; j <= n * 100; j++) {
+				double k = Math.sqrt(j);
+				if ((k * 100 % 10) == 0.00) {
+					System.out.println((int) (k * k) + " is the closest perfect square of " + (int) k
+							+ " to inputted number " + n + " With the difference of " + (int) Math.abs(n - k * k));
+					break outerLoop;
+				}
+				double k1 = Math.sqrt(n - a);
+				a++;
+				if ((k1 * 100 % 10) == 0.00) {
+					System.out.println((int) (k1 * k1) + " is the closest perfect square of " + (int) k
+							+ " to inputted number " + n + " With the difference of " + (int) Math.abs(n - k1 * k1));
+					break outerLoop;
+				}
+			}
+		}
+	}
+}
+
+        </code>
+      </pre>
+      </li>
+    </ol>
+  </div>
+
+
+  <div class="container">
+    <ol>
+      <li>
+        <span class="prName"><h3>Replace All Duplicate Elements in Matrix with Zero</h3></span>
+        <pre class="language-java" style="width: 90%;"><code>
+          import java.util.Scanner;
+
+          public class ReplaceDuplicatesithZero {
+          
+            public static void main(String... args) {
+              Scanner sG = new Scanner(System.in);
+              System.out.println("Enter row & clumn size : ");
+              int a[][] = new int[sG.nextInt()][sG.nextInt()];
+              int c = 0;
+          
+              for (int i = 0; i < a.length; i++) {
+                for (int j = 0; j < a.length; j++) {
+                  System.out.print("a[" + i + "][" + j + "] : ");
+                  a[i][j] = sG.nextInt();
+                }
+              }
+              for (int i = 0; i < a.length; i++) {
+                for (int j = 0; j < a.length; j++) {
+                  c = 0;
+                  for (int i2 = 0; i2 < a.length; i2++) {
+          
+                    for (int j2 = 0; j2 < a.length; j2++) {
+          
+                      if (a[i][j] == a[i2][j2] && (i2 != i || j2 != j)) {
+          
+                        a[i2][j2] = 0;
+                        c++;
+                      }
+                    }
+                  }
+                  if (c > 0) {
+                    a[i][j] = 0;
+                  }
+                }
+              }
+              System.out.println("\nAfter replacing duplicates with zero : ");
+              for (int i = 0; i < a.length; i++) {
+                for (int j = 0; j < a.length; j++) {
+                  System.out.print(a[i][j] + " ");
+                }
+                System.out.println();
+              }
+            }
+          }
+          
+        </code>
+      </pre>
+      </li>
+    </ol>
+  </div>
+
+</section>
+</body>
+
+</html>
